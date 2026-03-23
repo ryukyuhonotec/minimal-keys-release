@@ -1,4 +1,5 @@
 #include "minimal-keys.dtsi"
+#include <input/processors.dtsi>
 &xiao_serial { status = "disabled"; };
 &default_transform {
     col-offset = <6>;
@@ -43,7 +44,17 @@
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
+        input-processors = <&zip_temp_layer 6 3000>;
     };
+};
+
+&zip_temp_layer {
+    require-prior-idle-ms = <150>;
+    excluded-positions = <
+        18 // MOUSE: MB1
+        19 // MOUSE: MB3
+        20 // MOUSE: MB2
+    >;
 };
 
 &spi0 {
