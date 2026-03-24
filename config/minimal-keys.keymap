@@ -62,7 +62,7 @@
 &kp Q     &kp W         &kp E              &kp R                   &kp T                                     &kp Y            &kp U  &kp I      &kp O    &kp P
 &kp A     &kp S         &kp D              &kp F                   &kp G        &kp LG(C)      &kp LG(LEFT)  &kp H            &kp J  &kp K      &kp L    &kp MINUS
 &kp Z     &kp X         &kp C              &kp V                   &kp B        &kp LG(V)      &kp RCMD      &kp N            &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp RCMD  &kp LEFT_ALT  &kp RIGHT_CONTROL  &mt LEFT_COMMAND LANG2  &lt 1 SPACE  &lt 3 ENTER    &lt 1 LANG2   &lt 2 BACKSPACE                             &kp RIGHT_SHIFT
+&kp RCMD  &kp LEFT_ALT  &kp RIGHT_CONTROL  &mt LEFT_COMMAND LANG2  &lt 1 SPACE  &lt 3 ENTER    &lt 1 LANG1   &lt 2 BACKSPACE                             &kp RIGHT_SHIFT
             >;
 
             sensor-bindings =
@@ -72,10 +72,10 @@
 
         layer_1 {
             bindings = <
-&kp ESCAPE        &kp LEFT_SHIFT    &mkp MB2           &mkp MB1      &mkp MB3                                       &kp F1     &kp F6                    &kp UP_ARROW               &kp RG(S)        &kp RG(R)
-&kp TAB           &kp HASH          &kp RS(AMPERSAND)  &kp QUESTION  &kp EXCLAMATION  &kp COLON    &kp RS(RCMD)     &kp EQUAL  &kp LEFT_ARROW            &kp DOWN_ARROW             &kp RIGHT_ARROW  &kp F10
-&kp PERCENT       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp AT        &kp BACKSLASH    &kp SEMI     &kp RIGHT_SHIFT  &kp RCMD   &kp RS(RG(LEFT_BRACKET))  &kp RS(LG(RIGHT_BRACKET))  &kp RS(LG(T))    &kp F11
-&kp LEFT_COMMAND  &kp LG(F)         &kp LG(X)          &kp LG(Z)     &kp LS(LG(Z))    &kp LG(Y)    &kp RG(A)        &kp RG(X)                                                                        &kp RIGHT_SHIFT
+&trans       &kp EXCLAMATION   &kp DOUBLE_QUOTES  &kp HASH    &kp DOLLAR                              &kp PERCENT     &kp AMPERSAND  &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp TAB      &kp QUESTION      &kp COMMA          &kp PERIOD  &kp SLASH      &kp COLON    &trans      &kp PG_UP       &kp UP_ARROW   &kp PAGE_DOWN     &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+&kp PERCENT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp AT      &kp BACKSLASH  &kp SEMI     &trans      &kp LEFT_ARROW  &kp DOWN       &kp RIGHT_ARROW   &kp LESS_THAN         &kp GREATER_THAN
+&trans       &trans            &trans             &kp LG(Z)   &kp LS(LG(Z))  &kp LG(Y)    &kp DELETE  &kp BSPC                                                               &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
