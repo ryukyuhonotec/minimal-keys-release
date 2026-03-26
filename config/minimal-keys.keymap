@@ -81,10 +81,10 @@
 
         layer_2 {
             bindings = <
-&trans   &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH     &kp DOLLAR                                   &kp PERCENT     &kp AMPERSAND  &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp TAB  &kp QUESTION     &kp BACKSLASH      &kp SLASH    &kp SEMICOLON  &kp COLON         &trans      &kp PG_UP       &kp UP_ARROW   &kp PAGE_DOWN     &kp LEFT_BRACKET      &kp RIGHT_BRACKET
-&trans   &kp GRAVE        &kp TILDE          &kp AT_SIGN  &kp PIPE       &kp UNDERSCORE    &kp ENTER   &kp LEFT_ARROW  &kp DOWN       &kp RIGHT_ARROW   &kp LESS_THAN         &kp GREATER_THAN
-&trans   &trans           &trans             &kp LG(Z)    &kp LS(LG(Z))  &kp TAB           &kp DELETE  &kp BSPC                                                               &trans
+&trans   &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH     &kp DOLLAR                                   &kp PERCENT      &kp AMPERSAND  &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp TAB  &kp QUESTION     &kp BACKSLASH      &kp SLASH    &kp SEMICOLON  &kp COLON         &trans      &kp LC(LS(TAB))  &kp UP_ARROW   &kp LC(TAB)       &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+&trans   &kp GRAVE        &kp TILDE          &kp AT_SIGN  &kp PIPE       &kp UNDERSCORE    &kp ENTER   &kp LEFT_ARROW   &kp DOWN       &kp RIGHT_ARROW   &kp LESS_THAN         &kp GREATER_THAN
+&trans   &trans           &trans             &kp LG(Z)    &kp LS(LG(Z))  &kp TAB           &kp DELETE  &kp BSPC                                                                &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
@@ -92,10 +92,10 @@
 
         layer_3 {
             bindings = <
-&trans         &kp LA(V)             &kp LC(LA(LEFT_ARROW))  &kp LC(LA(RIGHT_ARROW))  &kp LC(LA(ENTER))                            &kp N7        &kp N8        &kp N9        &kp PLUS      &kp MINUS
-&kp BACKSPACE  &kp LA(LG(V))         &kp LA(TAB)             &kp LG(SPACE)            &kp RG(LEFT_ARROW)  &trans    &trans         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK  &kp SLASH
-&kp LC(LS(V))  &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))    &kp LS(LG(N5))           &kp NUMBER_3        &trans    &trans         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL     &kp PERIOD
-&kp LG(LS(A))  &kp LG(LS(V))         &trans                  &kp RS(RG(V))            &kp RG(C)           &trans    &kp BACKSPACE  &kp N0                                                  &kp PIPE
+&trans              &kp LC(LA(LEFT_BRACKET))  &kp LC(LA(LEFT_ARROW))  &kp LC(LA(RIGHT_ARROW))  &kp LC(LA(ENTER))                           &kp N7        &kp N8        &kp N9        &kp PLUS      &kp MINUS
+&kp BACKSPACE       &kp LEFT_ARROW            &kp LA(TAB)             &kp RIGHT_ARROW          &kp RG(SPACE)      &trans    &trans         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK  &kp SLASH
+&kp DEL             &kp LS(LG(NUMBER_3))      &kp LS(LG(NUMBER_4))    &kp LS(LG(N5))           &kp NUMBER_3       &trans    &kp ENTER      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL     &kp PERIOD
+&kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)       &trans                  &trans                   &trans             &trans    &kp BACKSPACE  &kp N0                                                  &kp PIPE
             >;
 
             sensor-bindings =
